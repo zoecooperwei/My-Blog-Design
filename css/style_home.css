@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: no-repeat;
+	/* background-position: right top;*/
+	background-size: cover;
+	background-attachment: fixed;
+	background: url(../img/background.jpg);
+	/*animation-name: background;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;*/
+	/*animation-fill-mode: forwards;*/
+}
+
+/*@keyframes background{
+	0% {background: url(../img/bg3.jpg);}
+	50% {background: url(../img/bg4.jpg);}
+	100% {background: url(../img/bg3.jpg);}
+}*/
+
+header {
+	width: 80px;
+	float: left;
+}
+
+main {
+	width: 320px;
+	padding-top: 100px;
+	margin: auto;
+}
+
+.profileBox {
+	max-width: 280px;
+	max-height: 500px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	border: white solid 1px;
+	color: white;
+	font-family: 'Markazi Text', serif;
+	/*font-family: 'Inconsolata', monospace;*/
+}
+
+.profileBox h1 {
+	font-size: 3.5vw;
+	letter-spacing: 3px;
+	line-height: 40px;
+}
+
+.profileBox p {
+	text-align: justify;
+}
+
+#fb, #wx, #mail{
+	cursor: pointer;
+}
+
+.myImg {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+nav {
+	width: 80px;
+	padding: 0;
+	text-align: center;
+	backface-visibility: hidden;
+}
+
+nav .container {
+	display: inline-block;
+	cursor: pointer;
+	width: 40px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 30px;
+	height: 4px;
+	padding: 0;
+	background-color: #6a202d;
+	margin: 5px 5px;
+	transition: 250ms;
+}
+
+.change .bar1{
+	-webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2{
+	opacity: 0;
+}
+
+.change .bar3{
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.change .bar1, .change .bar3 {
+	background-color: white;
+}
+
+nav ul {
+	/*margin-top: 15px;*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/* 隐藏了ul下的所有的li元素，实际上每个li元素仍然占据空间，只是visibility为不可见，最开始ul高度为0(max-height: 0)
+	当click之后，如果ul在click之前的高度为0，则为menu.style.maxHeight = false；则执行：menu.scrollHeight+"px";
+	如果ul在click之前的高度为px, menu.style.maxHeight = true, 则执行：maxHeight = null
+	px 就等于ul内所有li的高度之和
+	*/
+	overflow: hidden;
+	max-height: 0;
+	/*下拉菜单时，到达max-height的时间设定为400ms*/
+	transition: max-height ease-in-out 400ms;
+}
+
+nav #menu li {
+	text-decoration: none;
+	height: 60px;
+	transition: all ease-in-out 230ms;	
+	padding: 15px 10px 10px 10px;
+	opacity: 0.7;
+}
+
+.active {
+	background-color: #424b4c;
+}
+
+.transform {
+	transform: translate(0, 60px);
+}
+
+nav li a {
+	text-decoration: none;
+	color: white;
+	opacity: 0.9;
+	font-family: 'Markazi Text', serif;
+	transition: all ease-in-out 200ms;
+	font-size: 25px;
+}
+
+nav li a:hover {
+	color: #e3fbe7;
+}
+
+nav div {
+	margin: 0;
+	height: 60px;
+	background: #f1e5e5;
+	opacity: 0.5;
+	padding: 10px;
+}
+
+.profileBox ul {
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	list-style: none;
+}
+
+.profileBox li {
+	display: inline-block;
+	margin: 10px;
+}
+
+.profileBox li a {
+	color: white;
+	text-decoration: none;
+	font-size: 35px;
+	transition: all ease-in-out 300ms;
+}
+
+.profileBox li a:hover {
+	color: #e3fbe7;
+}
+
+.detail {
+	width: 220px;
+	display: inline;
+	float: left;
+}
+
+footer{
+	clear: both;
+	padding: 20px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	font-family: 'Inconsolata', monospace;
+}
