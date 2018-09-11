@@ -8,3 +8,7 @@
 Homepage:
 
 ![homepage](../master/img/Homepage.jpg)
+
+Contact page:
+
+![contact](../master/img/Contact.jpg)
