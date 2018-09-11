@@ -40,26 +40,29 @@ main {
 	max-width: 280px;
 	max-height: 500px;
 	margin: auto;
-	padding: 20px;
+	padding: 30px 20px;
 	text-align: center;
 	border: white solid 1px;
 	color: white;
 	/*font-family: 'Markazi Text', serif;*/
 	font-family: 'Inconsolata', monospace;
 	text-align: center;
+	/*background-color: #987070;*/
 }
 
 .profileBox h1 {
-	font-size: 3.5vw;
+	/*font-size: 3.5vw;*/
 	letter-spacing: 3px;
 	line-height: 40px;
+	/*color: white;*/
 }
 
 .profileBox p {
 	/*text-align: justify;*/
+	font-size: 17px;
 }
 
-#fb, #wx, #mail{
+#fb, #linkedin, #github{
 	cursor: pointer;
 }
 
@@ -91,7 +94,7 @@ nav .container {
 	padding: 0;
 	background-color: #6a202d;
 	margin: 5px 5px;
-	transition: 250ms;
+	transition: all 0.3s ease-in-out;
 }
 
 .change .bar1{
@@ -137,7 +140,7 @@ nav #menu li {
 }
 
 .active {
-	background-color: #424b4c;
+	background-color: #947278;
 }
 
 .transform {
@@ -149,7 +152,7 @@ nav li a {
 	color: white;
 	opacity: 0.9;
 	font-family: 'Markazi Text', serif;
-	transition: all ease-in-out 200ms;
+	transition: all ease-in-out 1s;
 	font-size: 25px;
 }
 
@@ -161,7 +164,7 @@ nav div {
 	margin: 0;
 	height: 60px;
 	background: #f1e5e5;
-	opacity: 0.5;
+	opacity: 0.7;
 	padding: 10px;
 }
 
@@ -194,6 +197,15 @@ nav div {
 	float: left;
 }
 
+span {
+	border: 2px solid #d4d2d2;
+	border-radius: 6px;
+	padding: 3px 5px 3px 5px;
+	background-color: #cab0b2;
+	color: #fff;
+	transition: all ease-in-out 400ms;
+}
+
 footer{
 	clear: both;
 	padding: 20px;
@@ -201,4 +213,5 @@ footer{
 	text-align: center;
 	color: #fff;
 	font-family: 'Inconsolata', monospace;
+	font-size: 17px;
 }

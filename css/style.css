@@ -282,6 +282,7 @@ footer{
 	text-align: center;
 	color: #fff;
 	font-family: 'Inconsolata', monospace;
+	font-size: 17px;
 }
 
 span {
@@ -403,4 +404,8 @@ input{
 
 .contact-info:hover{
 	color: #9c7d7f;
+}
+
+.project-info {
+
 }
