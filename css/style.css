@@ -59,11 +59,10 @@ header {
 	max-width: 280px;
 	max-height: 500px;
 	margin: auto;
-	padding: 20px;
+	padding: 40px 10px;
 	border: white solid 1px;
 	color: white;
 	/*font-family: 'Markazi Text', serif;*/
-	font-family: 'Inconsolata', monospace;
 	text-align: center;
 }
 
@@ -103,7 +102,7 @@ header {
 	color: #e3fbe7;
 }
 
-#fb, #wx, #mail{
+#fb, #linkedin, #github{
 	cursor: pointer;
 }
 
@@ -135,7 +134,7 @@ nav .container {
 	padding: 0;
 	background-color: #6a202d;
 	margin: 5px 5px;
-	transition: 250ms;
+	transition: all 0.3s ease-in-out;
 }
 
 .change .bar1{
@@ -175,12 +174,12 @@ nav ul {
 nav #menu li {
 	text-decoration: none;
 	height: 60px;
-	transition: all ease-in-out 230ms;	
+	transition: all ease-in-out 1s;	
 	padding: 15px 10px 10px 10px;
 }
 
 .active {
-	background-color: #424b4c;
+	background-color: #947278;
 }
 
 .transform {
@@ -192,7 +191,7 @@ nav li a {
 	color: white;
 	opacity: 0.9;
 	font-family: 'Markazi Text', serif;
-	transition: all ease-in-out 200ms;
+	transition: all ease-in-out 1s;
 	font-size: 25px;
 }
 
@@ -204,11 +203,12 @@ nav div {
 	margin: 0;
 	height: 60px;
 	background: #f1e5e5;
-	opacity: 0.5;
+	opacity: 0.7;
 	padding: 10px;
 }
 
 .left {
+	/*width: 470px;*/
 	width: 37%;
 	min-width: 400px;
 	/*display: inline;*/
@@ -216,24 +216,31 @@ nav div {
 	padding: 0;
 	margin: 0;
 	/*position: fixed;*/
+	font-family: 'Inconsolata', monospace;
 }
 
 .right {
+	/*margin-left: 470px;*/
 	width: 63%;
 	min-width: 700px;
-	padding: 0 50px 0 50px;
+	padding: 0 40px;
+	height: auto;
 	float: right;
 	background-color: rgb(255, 255, 255, 0.6);
+	/*position:absolute;*/
+	/*top: 0;*/
+	/*bottom: 0;*/
+	font-family: 'Inconsolata', monospace;
 }
 
 .allproject {
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 50px;
 	width: 700px;
 }
 
 .project {
-	padding: 20px 20px 10px 20px;
+	padding: 10px 20px 10px 20px;
 	margin: 0;
 	font-family: 'Inconsolata', monospace;
 	border-bottom: 1px solid #b4b9c1;
@@ -244,11 +251,21 @@ nav div {
 }
 
 .project-title {
-	color: #8e7e78;
-	font-size: 30px;
-	font-weight: bold;
+	/*color: #8e7e78;*/
+	/*font-size: 30px;*/
 	padding: 5px;
 	margin-bottom: 15px;
+	color: #b59497;
+	/*border-bottom: 1px solid #fff;*/
+}
+
+.project hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
 }
 
 .project p {
@@ -287,8 +304,13 @@ span {
 
 @media only screen and (max-width: 1150px) {
     .column {
+    	/*margin: 0;*/
+    	/*position: relative;*/
         width: 100%;
     }
+    /*.right{
+    	height: 100%;
+    }*/
     .my-detail main {
     	margin: auto;
     }
@@ -298,4 +320,87 @@ span {
 	.my-detail {
 		position: relative;
 	}
+}
+
+.form-detail {
+	margin-top: 30px;
+}
+
+.contact-title {
+	width: 400px;
+	margin-top: 90px;
+	margin-bottom: 35px;
+	color: #b59497;
+	border-bottom: 1px solid #c79c9c;
+}
+
+.contact-title i{
+	font-size: 25px;
+}
+
+.contact-way{
+	padding: 20px;
+	background-color: rgba(220, 212, 212, 0.3);
+}
+
+.detail i{
+	font-size: 30px;
+	padding: 0 0 15px 0;
+	color: #b59497;
+	transition: all 0.5s ease-in-out;
+}
+
+.detail i:hover{
+	color: #9c7d7f;
+}
+
+.form-control:focus{
+    border-color: #cab0b2 !important;
+    border-width: 2px;
+    box-shadow: none !important;
+}
+
+input{
+	margin-bottom: 20px !important;
+}
+
+.textarea{
+	margin-top: 10px;
+	text-indent: 0;
+}
+
+.submit{
+	text-align: center;
+}
+
+.button {
+	color: #b59497;
+	font-size: 17px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid #b59497;
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	padding: 0;
+}
+
+.button:hover{
+	background-color: rgba(181, 148, 151, 0.8);
+	color: #fff;
+	border: none;
+	/* box-shadow: x-offset y-offset blur spread color*/
+	box-shadow: 0 5px 5px 1px #92787a;
+}
+
+.contact-info{
+	color: #b59497;
+	font-size: 16px;
+	transition: all 0.5s ease-in-out;
+}
+
+.contact-info:hover{
+	color: #9c7d7f;
 }

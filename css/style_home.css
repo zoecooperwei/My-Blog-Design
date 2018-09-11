@@ -44,8 +44,9 @@ main {
 	text-align: center;
 	border: white solid 1px;
 	color: white;
-	font-family: 'Markazi Text', serif;
-	/*font-family: 'Inconsolata', monospace;*/
+	/*font-family: 'Markazi Text', serif;*/
+	font-family: 'Inconsolata', monospace;
+	text-align: center;
 }
 
 .profileBox h1 {
@@ -55,7 +56,7 @@ main {
 }
 
 .profileBox p {
-	text-align: justify;
+	/*text-align: justify;*/
 }
 
 #fb, #wx, #mail{
