@@ -5,6 +5,6 @@
 - Different contents presented in different pages.
 ---
 
-Homepage
+Homepage:
 
 ![homepage](../master/img/Homepage.jpg)
