@@ -5,10 +5,13 @@
 	<title>Welcome To Chen's Blog</title>
 	<!-- css src -->
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- font-family src -->
 	<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600" rel="stylesheet">
 	<!-- fonts src -->
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Inconsolata:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- icon src -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<!-- viewport -->
@@ -44,11 +47,13 @@
 			 	<img src="../img/profile.jpg" alt="Profile" class="myImg">
 			 	<h1>Chen Wei</h1>
 			 	<p>Web Developer &amp Designer.</p>
+			 	<p>Love coding.</p>
+			 	<p>Enthusiasm on work and learn.</p>
 
 			 	<ul>
 					<li id="fb"><a onclick=window.open("https://www.facebook.com/profile.php?id=100011012767448")><i class="fab fa-facebook-square"></i></a></li>
-					<li id="wx"><a href="#"><i class="fab fa-weixin"></i></a></li>
-					<li id="mail"><a href="#"><i class="fas fa-envelope"></i></a></li> 
+					<li id="linkedin"><a onclick=window.open("https://www.linkedin.com/in/chen-wei-b592a2157/")><i class="fab fa-linkedin"></i></a></li>
+					<li id="github"><a onclick=window.open("https://github.com/zoecooperwei")><i class="fab fa-github"></i></a></li> 
 				</ul>
 			 </div>	
 			<footer>Designed &amp coded by <span>Chen Wei</span></footer>
@@ -57,52 +62,74 @@
 </div>
 
 <div class="right column">
-		<div class="allproject">
-			<div class="project" id="blog">
-				<div class="project-title">My Blog</div>
-				<div class="project-info"></div>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>
+	<div class="contact-title">
+		<h1>Get In Touch <i class="far fa-comment-dots"></i></h1>
+	</div>
+
+	<div class="row contact-way">
+		<div class="col-sm-12 col-lg-12">
+
+			<div class="col-sm-4 col-lg-4">
+				<div class="detail">
+					<i class="fas fa-mobile-alt"></i>
+				</div>
+				<p class="contact-info">+1 613-252-7548</p>
 			</div>
 
-			<div class="project" id="weather">
-				<div class="project-title">Weather-app</div>
-				<div class="project-info"></div>
-				 <p>A single web page app for weather, local time and location display.</p>
-				 <p>Built in HTML, CSS, JavaScript, jQuery with several APIs.</p>
-				 <p>Automatic location detection.</p>
-				 <p>Adding custom city via searching by name.</p>
+			<div class="col-sm-4 col-lg-4">
+				<div class="detail">
+					<i class="far fa-envelope-open"></i>
+				</div>
+				<p class="contact-info">ZoeCooperWei@gmail.com</p>
 			</div>
 
-			<div class="project" id="list">
-				<div class="project-title">To-do List</div>
-				<div class="project-info"></div>
-				<p>Single page web app for to-do list management. Activities add, delete, edit.
-				<p>Javascript, HTML, CSS, jQuery.</p>
+			<div class="col-sm-4 col-lg-4">
+				<div class="detail">
+					<i class="far fa-clock"></i>
+				</div>
+				<p class="contact-info">Mon-Sun 9:00 - 19:00</p>
 			</div>
 
-			<div class="project" id="anime">
-				<div class="project-title">Dancing Anime Character</div>
-				<div class="project-info"></div>
-				<p>iOS app that can control the volume of BGM with one card and move 3D dancing character on another card.</p>
-				<p>Unity3D, C#, Xcode.</p>
-			</div>
-
-			<div class="project" id="bullet">
-				<div class="project-title">Visual Bullet Screen For Android</div>
-				<div class="project-info"></div>
-				<p>Android app that can select and play the video online and offline with visual feedback effect.</p>
-				<p>Android studio, DanmakuMaster, Java.</p>
-			</div>
-
-			<div class="project" id="sdn">
-				<div class="project-title">Software Defined Network (SDN) Load Balancing Algorithm Design</div>
-				<div class="project-info"></div>
-				<p>Bachelor graduate project.</p>
-				<p>Designed an algorithm which realized SDN load balancing.</p>
-				<p>Verified on a simulation network platform.</p>
-				<p>SDN, Floodlight, Mininet, Java, Python.</p>
-			</div>
 		</div>
+	</div>
+	
+	<div class="row col-sm-12 col-lg-12 form-detail">
+		<form action="">
+			<div class="col-sm-6 col-lg-6">
+				<div class="form-group">
+					<input type="name" id="name" class="form-control input" placeholder="Name">
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6">
+				<div class="form-group">
+					<input type="email" id="email" class="form-control" placeholder="Email">
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6">
+				<div class="form-group">
+					<input type="website" id="website" class="form-control" placeholder="Website">
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6">
+				<div class="form-group">
+					<input type="where" id="where" class="form-control" placeholder="Where are you from?">
+				</div>
+			</div>
+
+			<div class="col-sm-12 col-lg-12">
+				<div class="form-group">
+					<textarea id="message" class="form-control textarea" placeholder="Your Message" rows="7"></textarea>
+				</div>
+			</div>
+
+			<div class="submit">
+				<button class="button">Send</button>
+			</div>
+		</form>	
+	</div>
 </div>
 	
 <script src="../js/main.js"></script>		
