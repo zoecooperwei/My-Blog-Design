@@ -4,3 +4,5 @@
 - Personal blog for web design.
 - Different contents presented in different pages.
 ---
+
+![homepage](../master/img/Homepage.jpg)
