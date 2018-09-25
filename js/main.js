@@ -1,3 +1,5 @@
+
+
 var button = document.getElementById("bar");
 
 button.addEventListener("click", function(){
@@ -20,6 +22,60 @@ button.addEventListener("click", function(){
     } 
 });
 
+$('.middle').click(function(){
+	var imgSrc = $(this).prev().children();
+	var id = imgSrc.attr('id');
+	console.log($(this).prev());
+	console.log(id);
+	if(id === 'Rose flower'){
+		$('#Rose').css('display', 'block');
+		// $('#Rose').children().css('transform', 'scale(1.7)');
+		$('#Rose').children().animate({
+			width: '700px',
+			opacity: '1.0'
+		});
+	}else if(id === 'Mix flower'){
+		$('#Mix').css('display', 'block');
+		// $('#Mix').children().css('transform', 'scale(1.7)');
+		$('#Mix').children().animate({
+			width: '700px',
+			opacity: '1.0'
+		});
+	}else if(id === 'leaf'){
+		$('#Leaf').css('display', 'block');
+		// $('#Leaf').children().css('transform', 'scale(1.7)');
+		$('#Leaf').children().animate({
+			width: '700px',
+			opacity: '1.0'
+		});
+	}else if(id === 'Multi flower'){
+		$('#Multi').css('display', 'block');
+		// $('#Multi').children().css('transform', 'scale(1.7)');
+		$('#Multi').children().animate({
+			width: '700px',
+			opacity: '1.0'
+		});
+	}else if(id === 'pink flower'){
+		$('#Pink').css('display', 'block');
+		// $('#Pink').children().css('transform', 'scale(1.7)');
+		$('#Pink').children().animate({
+			width: '700px',
+			opacity: '1.0'
+		});
+	}else if(id === 'river'){
+		$('#River').css('display', 'block');
+		// $('#River').children().css('transform', 'scale(1.7)');
+		$('#River').children().animate({
+			width: '700px',
+			opacity: '1.0'
+		});
+	}
+});
+
+$('.img-overlay').click(function(){
+	$('.scale-overlay').css('display', 'none');
+	$('.img-overlay').css('width', '200px');
+})
 // var height = screen.height;
 // var detail = document.getElementById("detail");
 // detail.style.height = height;
