@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- font-family src -->
 	<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,400,800" rel="stylesheet">
 	<!-- fonts src -->
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Inconsolata:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -62,52 +63,59 @@
 </div>
 
 <div class="right column">
+	<div class="bgm">
+		<iframe src="../MP3/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+		<audio controls autoplay loop>
+		  <source src="../MP3/depapepe.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	
 	<div class="contact-title">
-		<h1>Get In Touch <i class="far fa-comment-dots"></i></h1>
+		<h1>Contact</h1>
 	</div>
 
 	<div class="row contact-way">
-		<div class="col-sm-12 col-lg-12">
+		<!-- <div class="col-sm-12"> -->
 
-			<div class="col-sm-4 col-lg-4">
+			<div class="col-sm-4">
 				<div class="detail">
 					<i class="fas fa-mobile-alt"></i>
 				</div>
 				<p class="contact-info">+1 613-252-7548</p>
 			</div>
 
-			<div class="col-sm-4 col-lg-4">
+			<div class="col-sm-4">
 				<div class="detail">
 					<i class="far fa-envelope-open"></i>
 				</div>
 				<p class="contact-info">ZoeCooperWei@gmail.com</p>
 			</div>
 
-			<div class="col-sm-4 col-lg-4">
+			<div class="col-sm-4">
 				<div class="detail">
 					<i class="far fa-clock"></i>
 				</div>
 				<p class="contact-info">Mon-Sun 9:00 - 19:00</p>
 			</div>
 
-		</div>
+		<!-- </div> -->
 	</div>
 	
-	<div class="row col-sm-12 col-lg-12 form-detail">
-		<form action="">
-			<div class="col-sm-6 col-lg-6">
+	<div class="row form-detail">
+		<form class="col-sm-12" action="">
+			<div class="col-sm-6">
 				<div class="form-group">
 					<input type="name" id="name" class="form-control input" placeholder="Name">
 				</div>
 			</div>
 
-			<div class="col-sm-6 col-lg-6">
+			<div class="col-sm-6">
 				<div class="form-group">
 					<input type="email" id="email" class="form-control" placeholder="Email">
 				</div>
 			</div>
 
-			<div class="col-sm-6 col-lg-6">
+			<div class="col-sm-6">
 				<div class="form-group">
 					<input type="website" id="website" class="form-control" placeholder="Website">
 				</div>
@@ -118,13 +126,13 @@
 					<input type="where" id="where" class="form-control" placeholder="Where are you from?">
 				</div>
 			</div>
-
-			<div class="col-sm-12 col-lg-12">
+			
+			<div class="col-sm-12">
 				<div class="form-group">
 					<textarea id="message" class="form-control textarea" placeholder="Your Message" rows="7"></textarea>
 				</div>
 			</div>
-
+			
 			<div class="submit">
 				<button class="button">Send</button>
 			</div>

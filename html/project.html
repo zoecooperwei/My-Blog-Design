@@ -5,9 +5,10 @@
 	<title>Welcome To Chen's Blog</title>
 	<!-- css src -->
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<!-- font-family src -->
 	<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,400,800" rel="stylesheet">
 	<!-- fonts src -->
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Inconsolata:400,700" rel="stylesheet">
 	<!-- icon src -->
@@ -61,32 +62,40 @@
 </div>
 
 <div class="right column">
-	<div class="work-title">Projects</div>
+	<div class="bgm">
+		<iframe src="../MP3/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+		<audio controls autoplay loop>
+		  <source src="../MP3/depapepe.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<div class="work-title"><h1>Projects</h1></div>
 	<div class="allproject">
 		<div class="project" id="blog">
 			<div class="project-title"><h1>My Blog</h1></div>
 			<!-- <hr> -->
-			<div class="project-info bg-danger">Sepetember 01, 2018 / by Chen Wei</div>
+			<div class="project-info"><span class="info">Sepetember 01, 2018 / by Chen Wei</span></div>
 			 <p class="intro">A personal blog design with four webpages: Homepage, About Me, My Work, Contact.</p>
 			 <img src="../img/Homepage.jpg" alt="" class="display">
-			 <p>Interface display</p>
+			 <!-- <p>Interface display</p> -->
 			 <p><span>HTML5</span>
 			 <span>CSS3</span>
 			 <span>JavaScript</span>
 			 <span>jQuery</span></p>
 
-			<div class="read"></div>
+			<div class="read">
+				<a href="#">Read more</a>
+			</div>
 		</div>
 
 		<div class="project" id="weather">
 			<div class="project-title"><h1>Weather-app</h1></div>
-			<div class="project-info bg-danger">Sepetember 01, 2018 / by Chen Wei</div>
+			<div class="project-info"><span class="info">Sepetember 01, 2018 / by Chen Wei</span></div>
 			 <p class="intro">A single web page app for weather, local time and location display.</p>
 			 <p>Automatic location detection.</p>
 			 <p>Adding custom city via searching by name.</p>
 			 <p>Multiple APIs used for remote data request.</p>
 			 <img src="../img/Weather.jpg" alt="" class="display">
-			 <p>Interface display</p>
+			 <!-- <p>Interface display</p> -->
 			 
 			 <p><span>HTML5</span>
 			 <span>CSS3</span>
@@ -94,42 +103,58 @@
 			 <span>jQuery</span>
 			 <span>AJAX</span>
 			 <span>JSON</span></p>
+
+			 <div class="read">
+				<a href="#">Read more</a>
+			</div>
 		</div>
 
 		<div class="project" id="list">
 			<div class="project-title"><h1>To-do List</h1></div>
-			<div class="project-info bg-danger">Sepetember 01, 2018 / by Chen Wei</div>
+			<div class="project-info"><span class="info">Sepetember 01, 2018 / by Chen Wei</span></div>
 			<p class="intro">Single page web app for to-do list management. 
 			<p>Activities add, delete, edit.</p>
 			<img src="../img/Todo.jpg" alt="" class="display">
-			<p>Interface display</p>
+			<!-- <p>Interface display</p> -->
 			<p><span>HTML5</span>
 			 <span>CSS3</span>
 			 <span>JavaScript</span> 
 			 <span>jQuery</span></p>
+
+			 <div class="read">
+				<a href="#">Read more</a>
+			</div>
 		</div>
 
 		<div class="project" id="anime">
 			<div class="project-title"><h1>Dancing Anime Character</h1></div>
-			<div class="project-info bg-danger">Sepetember 01, 2018 / by Chen Wei</div>
+			<div class="project-info"><span class="info">Sepetember 01, 2018 / by Chen Wei</span></div>
 			<p class="intro">iOS app that can control the volume of BGM with one card and move 3D dancing character on another card.</p>
 			<p><span>Unity3D</span>
 			<span>C#</span>
 			<span>Xcode</span></p>
+
+			<div class="read">
+				<a href="#">Read more</a>
+			</div>
 		</div>
 
 		<div class="project" id="bullet">
 			<div class="project-title"><h1>Visual Bullet Screen For Android</h1></div>
-			<div class="project-info bg-danger">Sepetember 01, 2018 / by Chen Wei</div>
+			<div class="project-info"><span class="info">Sepetember 01, 2018 / by Chen Wei</span></div>
 			<p class="intro"> Android app that can select and play the video online and offline with visual feedback effect.</p>
 			<p><span>Android studio</span>
 			<span>DanmakuMaster</span>
 			<span>Java</span></p>
+
+			<div class="read">
+				<a href="#">Read more</a>
+			</div>
 		</div>
 
 		<div class="project" id="sdn">
 			<div class="project-title"><h1>Software Defined Network (SDN) Load Balancing Algorithm Design</h1></div>
-			<div class="project-info bg-danger">Sepetember 01, 2018 / by Chen Wei</div>
+			<div class="project-info"><span class="info">Sepetember 01, 2018 / by Chen Wei</span></div>
 			<p class="intro">Bachelor graduate project.</p>
 			<p>Designed an algorithm which realized SDN load balancing.</p>
 			<p>Verified on a simulation network platform.</p>
@@ -138,6 +163,10 @@
 			<span>Mininet</span>
 			<span>Java</span> 
 			<span>Python</span></p>
+
+			<div class="read">
+				<a href="#">Read more</a>
+			</div>
 		</div>
 	</div>
 </div>

@@ -5,18 +5,45 @@
 	<title>Welcome To Chen's Blog</title>
 	<!-- css src -->
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<!-- font-family src -->
 	<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,400,800" rel="stylesheet">
 	<!-- fonts src -->
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Inconsolata:400,700" rel="stylesheet">
 	<!-- icon src -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<!-- viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  </head>
 
 <body>
+<div class="scale-overlay" id="Rose">
+	<img src="../img/flower.jpg" alt="Rose flower" class="img-overlay rounded">
+</div>
+
+<div class="scale-overlay" id="Mix">
+	<img src="../img/flower.png" alt="Mix flower" class="img-overlay rounded">
+</div>
+
+<div class="scale-overlay" id="Leaf">
+	<img src="../img/leaf.jpg" alt="leaf" class="img-overlay rounded">
+</div>
+
+<div class="scale-overlay" id="Multi">
+	<img src="../img/mix.jpg" alt="Multi flower" class="img-overlay rounded">
+</div>
+
+<div class="scale-overlay" id="Pink">
+	<img src="../img/pink.jpg" alt="pink flower" class="img-overlay rounded">
+</div>
+
+<div class="scale-overlay" id="River">
+	<img src="../img/river.jpg" alt="river" class="img-overlay rounded">
+</div>
+
 <div class="left column">
 	<div class="my-detail">
 		<header>
@@ -60,52 +87,107 @@
 </div>
 
 <div class="right column">
-		<div class="allproject">
-			<div class="project" id="blog">
-				<div class="project-title">My Blog</div>
-				<div class="project-info"></div>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>
+	<div class="bgm">
+		<iframe src="../MP3/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+		<audio controls autoplay loop>
+		  <source src="../MP3/depapepe.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+
+	<div class="about-title">
+		<h1>Life</h1>
+	</div>
+	
+	<div class="Music">
+		<!-- <h2><i class="fas fa-headphones-alt"></i></h2> -->
+		<h2><i class="fas fa-video"></i></h2>
+		<div class="video">
+			<iframe width="665" height="385" src="https://www.youtube.com/embed/D9gEBb8rfuU"></iframe>
+		</div>
+		<div class="comment">
+			<p><i class="fas fa-heart"></i> This is one of my favorite song in Depapepe first official album, share with u guys :) (Let's go)</p>
+		</div>
+	</div>
+	
+	<div class="line">
+		
+	</div>
+
+	<div class="Picture">
+		<h2><i class="fas fa-camera-retro"></i></h2>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="img-container">
+					<div class="image">
+						<img src="../img/flower.jpg" alt="Rose flower" id="Rose flower" class="img-thumbnail img-about">
+					</div>
+					<div class="middle"><div class="text">View</div></div>
+				</div>
+				<div class="caption"><span>Rose DIY</span></div>
 			</div>
 
-			<div class="project" id="weather">
-				<div class="project-title">Weather-app</div>
-				<div class="project-info"></div>
-				 <p>A single web page app for weather, local time and location display.</p>
-				 <p>Built in HTML, CSS, JavaScript, jQuery with several APIs.</p>
-				 <p>Automatic location detection.</p>
-				 <p>Adding custom city via searching by name.</p>
-			</div>
-
-			<div class="project" id="list">
-				<div class="project-title">To-do List</div>
-				<div class="project-info"></div>
-				<p>Single page web app for to-do list management. Activities add, delete, edit.
-				<p>Javascript, HTML, CSS, jQuery.</p>
-			</div>
-
-			<div class="project" id="anime">
-				<div class="project-title">Dancing Anime Character</div>
-				<div class="project-info"></div>
-				<p>iOS app that can control the volume of BGM with one card and move 3D dancing character on another card.</p>
-				<p>Unity3D, C#, Xcode.</p>
-			</div>
-
-			<div class="project" id="bullet">
-				<div class="project-title">Visual Bullet Screen For Android</div>
-				<div class="project-info"></div>
-				<p>Android app that can select and play the video online and offline with visual feedback effect.</p>
-				<p>Android studio, DanmakuMaster, Java.</p>
-			</div>
-
-			<div class="project" id="sdn">
-				<div class="project-title">Software Defined Network (SDN) Load Balancing Algorithm Design</div>
-				<div class="project-info"></div>
-				<p>Bachelor graduate project.</p>
-				<p>Designed an algorithm which realized SDN load balancing.</p>
-				<p>Verified on a simulation network platform.</p>
-				<p>SDN, Floodlight, Mininet, Java, Python.</p>
+			<div class="col-sm-6">
+				<div class="img-container">
+					<div class="image">
+						<img src="../img/flower.png" alt="Mix flower" id="Mix flower" class="img-thumbnail img-about">
+					</div>
+					<div class="middle"><div class="text">View</div></div>
+				</div>
+				<div class="caption"><span>Mix flower</span></div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="img-container">
+					<div class="image">
+						<img src="../img/leaf.jpg" alt="leaf" id="leaf" class="img-thumbnail img-about">
+					</div>
+					<div class="middle"><div class="text">View</div></div>
+				</div>
+
+				<div class="caption"><span>Leaf</span></div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="img-container">
+					<div class="image">
+						<img src="../img/mix.jpg" alt="Multi flower" id="Multi flower" class="img-thumbnail img-about">
+					</div>
+					<div class="middle"><div class="text">View</div></div>
+				</div>
+				<div class="caption"><span>Multi flower</span></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="img-container">
+					<div class="image">
+						<img src="../img/pink.jpg" alt="pink flower" id="pink flower" class="img-thumbnail img-about">
+					</div>
+					<div class="middle"><div class="text">View</div></div>
+				</div>
+				<div class="caption"><span>Unknown flower</span></div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="img-container">
+					<div class="image">
+						<img src="../img/river.jpg" alt="river" id="river" class="img-thumbnail img-about">
+					</div>
+					<div class="middle"><div class="text">View</div></div>
+				</div>
+				<div class="caption"><span>River</span></div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="overlay">
+	<img src="../img/flower.jpg" alt="Rose flower" class="img-overlay">
 </div>
 
 <script src="../js/main.js"></script>		
